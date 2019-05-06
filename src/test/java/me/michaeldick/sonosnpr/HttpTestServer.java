@@ -12,12 +12,12 @@ import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.Server;
 import org.apache.log4j.Logger;
-private static Logger logger = Logger.getLogger(HttpTestServer.class.getSimpleName());
+
 import org.eclipse.jetty.server.handler.AbstractHandler;
 
 public class HttpTestServer {
 	public static int HTTP_PORT = 50036;
-    
+    private static Logger logger = Logger.getLogger(HttpTestServer.class.getSimpleName());
     private Server _server;
     private String _responseBody;
     private String _requestBody;
