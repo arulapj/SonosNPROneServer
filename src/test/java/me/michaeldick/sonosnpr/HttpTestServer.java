@@ -11,6 +11,8 @@ import org.apache.cxf.helpers.IOUtils;
 import org.eclipse.jetty.server.Handler;
 import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.server.Server;
+import org.apache.log4j.Logger;
+private static Logger logger = Logger.getLogger(HttpTestServer.class.getSimpleName());
 import org.eclipse.jetty.server.handler.AbstractHandler;
 
 public class HttpTestServer {
@@ -82,6 +84,7 @@ public class HttpTestServer {
     }
  
     public String getRequestBody() {
+		logger.info(_requestBody);
         return _requestBody;
     }
      
