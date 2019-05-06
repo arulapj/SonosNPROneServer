@@ -472,8 +472,8 @@ public class SonosService implements SonosSoap {
             verification_uri = root.get("verification_uri").getAsString();
             user_code = root.get("user_code").getAsString();
             device_code = root.get("device_code").getAsString();
-	    logger.debug("NEW ONE");
-	    logger.debug(householdId);
+	   logger.info("NEW ONE");
+	   logger.info(householdId);
             logger.info(householdId.hashCode() +": Got verification uri");
         }
 		    
